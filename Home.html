@@ -13,19 +13,20 @@
 
 	<script type="text/javascript">
 		$(document).on("scroll",function(){
-			if($(document).scrollTop()>100){ 
-				$("header").removeClass("large").addClass("small");
+			if($(document).scrollTop()>120){ 
+				 $("header").addclass("small").removeclass("large");
 				}
 			else{
-				$("header").removeClass("small").addClass("large");
+				$("header").addclass("large").removeclass("small");
 				}
 			});
+			
 	</script>
 </head>
 <body>
 		
 	
-<header class="large">
+<header class="large" style="overflow:hidden;">
 		<nav>
 			
 			<ul>
@@ -35,7 +36,21 @@
 				<li><a href="#">Gallery</a></li>
 				<li><a href="#">Tender</a></li>
 				<li><a href="#">Contact Us</a></li>
-				
+				<li><a href="#">alumni Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<header class="small" style="overflow:hidden;">
+		<nav>
+			
+			<ul>
+				<li class="logo"><a href="#">Ramanujan College</a> </li>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">RTI</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Tender</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">alumni Us</a></li>
 			</ul>
 		</nav>
 	</header>

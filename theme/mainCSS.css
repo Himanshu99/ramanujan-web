@@ -33,9 +33,9 @@ img{max-width:100%;}
 		
 
 		header, a, img, li{
-			transition: all 1s;
-			-moz-transition: all 1s; /* Firefox 4 */
-			-webkit-transition: all 1s; /* Safari and Chrome */
+			transition: all 1s easeout;
+			-moz-transition: all 1s easeout; /* Firefox 4 */
+			-webkit-transition: all 1s easeout;  /*Safari and Chrome */
 			-o-transition: all 1s; /* Opera */
 		}
 		
@@ -67,48 +67,44 @@ img{max-width:100%;}
 		header{
 			left:0px;
 			top:0px;
-			background: rgba(188, 188, 188,0.2);
+			background: rgba(0,0,0,0.5);
 			float: left;
-			width: 100%;
-			position: fixed;
+			width: 1349px;
+			position: relative;
 			z-index: 10;
 			
 		}
 			
-			header li{
-			}
 			
 			header li a{
 				font-family: 'Amaranth', sans-serif;
-				text-transform: uppercase;
 				color: #FFF;
-				display: block;
+				
 				margin:0px;
 				padding-left: 5px;
 				padding-right:5px;
+				
+				border-width: 1px;
+				
 
 			}
 			
 			header a.active,  header a:hover {
-				color: #333;
+				border-bottom: solid;
+				border-color:rgba(34,108,30,1);
 			}
 	
 			
 			
 
-			.backgroundm{
-				position:fixed;
-				top:50%;
-				right:0px;
-			}
 			header li{
 				margin-right: 30px;
 				
 			}
-			header li.logo a{
+			header li.logo {
 				position:absolute;
-				left:10px;
-				top: 3px;
+				left:20px;
+				margin-right:0px;
 				font-family: 'Amaranth', sans-serif;
 				text-transform: uppercase;
 				
@@ -117,10 +113,14 @@ img{max-width:100%;}
 			
 			/* Sizes for the bigger menu */
 			header.large{
+				background:#000;
 				height: 120px;
+				position: relative;
+				z-index:12;		
 			}
 
-			header.large li.logo a{
+			header.large li.logo {
+				margin-top: 30px;
 				font-size: 50px; 
 				font-weight:bold;
 			}
@@ -134,15 +134,22 @@ img{max-width:100%;}
 			/* Sizes for the smaller menu */
 			header.small{ 
 				height: 50px; 
+				position: fixed;
+				background:#000;
+				border-width: 1px;
+				border-bottom: solid;
+				border-color:rgba(34,108,30,1);
 			/*	background: #F18D05;/* orange */
 			/*	background: #1295D4;/* Blue */
-			/*	background: #333; /*black */
+			/*	background: #333; /*black /
 				background: rgba(34,108,30,1); /* green */
 			}
 
-			header.small li.logo a{ 
+			header.small li.logo { 
 				 
+				margin-top: 10px;
 				font-size: 30px; 
+				font-weight:bold;
 				
 			}
 
@@ -222,11 +229,11 @@ ul.sub1 li {
 	font-size: 0.823em;
 	text-transform: uppercase;
 	color: #FFF;
-	-webkit-transition: all .9s;
-	-moz-transition: all .9s;
-	-o-transition: all .9s;
-	-ms-transition: all .9s;
-	transition: all .9s;
+	-webkit-transition: all .9s easeout;
+	-moz-transition: all .9s easeout;
+	-o-transition: all .9s easeout;
+	-ms-transition: all .9s easeout;
+	transition: all .9s easeout;
 }
 .menu li a:hover, .menu li.active a {
 	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%,  rgba(34,108,30,1)), color-stop(100%, rgba(34,108,30,1)));
