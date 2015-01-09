@@ -1,3 +1,5 @@
+<?php
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -157,3 +159,4 @@
 				</ul>
 			</div>
 		</div>
+?>
