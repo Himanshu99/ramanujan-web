@@ -1,4 +1,4 @@
-
+<?php include ( "./inc/header.inc.php" ) ?>
 		
 		<div class="bkground">
 			<div class="contentBox">
@@ -9,3 +9,5 @@
 					</p>
 				</div>
 			</div>
+			
+<?php include ( "./inc/footer.inc.php" ) ?>
